@@ -16,6 +16,7 @@ public class MainTest {
 		JobDetail job = JobBuilder.newJob(SimpleJob.class).
 				withIdentity("JobDetail-1", "SimpleJob")
 				.build();
+		
 		Trigger trigger = TriggerBuilder.newTrigger()
 				.withIdentity("trigger_1", "SimpleJob")
 				.withSchedule(
