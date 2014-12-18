@@ -8,6 +8,7 @@ public class SimpleJob implements Job{
 
 	@Override
 	public void execute(JobExecutionContext executionContext) throws JobExecutionException {
+		System.out.println("没两秒执行一次");
 		System.out.println(executionContext.getJobRunTime());
 		System.out.println(executionContext.getFireInstanceId());
 	}
